@@ -193,9 +193,7 @@ function sumOfCodes(str) {
   if (typeof str !== 'string') {
     return 0;
   }
-  return str
-    .split('')
-    .reduce((sum, char) => sum + char.charCodeAt(0) + sum, 0);
+  return str.split('').reduce((sum, char) => sum + char.charCodeAt(0), 0);
 }
 
 /**
